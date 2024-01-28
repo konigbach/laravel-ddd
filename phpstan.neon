@@ -1,0 +1,22 @@
+includes:
+  - ./vendor/nunomaduro/larastan/extension.neon
+  - ./vendor/phpstan/phpstan-strict-rules/rules.neon
+
+parameters:
+  level: max
+  cache:
+    nodesByStringCountMax: 4096
+
+  paths:
+    - app
+    - src
+
+  excludePaths:
+    - app/Providers/*
+
+  reportMaybesInPropertyPhpDocTypes: false
+  reportMaybesInMethodSignatures: false
+  strictRules:
+    booleansInConditions: false
+    strictCalls: false
+    disallowedConstructs: false
