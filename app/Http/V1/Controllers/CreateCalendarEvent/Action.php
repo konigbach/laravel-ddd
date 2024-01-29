@@ -6,7 +6,6 @@ namespace App\Http\V1\Controllers\CreateCalendarEvent;
 
 use Business\CalendarEvent\Application\UseCases\CreateCalendarEvent\Command;
 use Business\Shared\Bus\Command\Domain\CommandBusInterface;
-use Carbon\CarbonImmutable;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 

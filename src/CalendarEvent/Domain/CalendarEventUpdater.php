@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Business\CalendarEvent\Domain;
 
-use Business\CalendarEvent\Application\Services\FindCalendarEvent\CalendarEventFinder;
 use Carbon\CarbonImmutable;
 
 final readonly class CalendarEventUpdater

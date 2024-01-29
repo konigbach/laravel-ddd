@@ -2,7 +2,6 @@
 
 use App\Providers\CommandBusServiceProvider;
 use App\Providers\QueryBusServiceProvider;
-use Business\Shared\Bus\Query\Domain\QueryBusInterface;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
 

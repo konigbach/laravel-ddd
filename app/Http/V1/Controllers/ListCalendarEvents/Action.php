@@ -17,10 +17,10 @@ final readonly class Action
 
     public function __invoke(Request $request): JsonResponse
     {
-        dd($this->queryBus->dispatch(new Query(
+        $this->queryBus->dispatch(new Query(
             startAt: $request->startAt(),
             endAt: $request->endAt(),
-        )));;
+        ));
 
         return new JsonResponse([
 

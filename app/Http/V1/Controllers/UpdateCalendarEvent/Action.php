@@ -6,7 +6,6 @@ namespace App\Http\V1\Controllers\UpdateCalendarEvent;
 
 use Business\CalendarEvent\Application\UseCases\UpdateCalendarEvent\Command;
 use Business\Shared\Bus\Command\Domain\CommandBusInterface;
-use Carbon\CarbonImmutable;
 use Illuminate\Http\JsonResponse;
 
 final readonly class Action
@@ -24,7 +23,6 @@ final readonly class Action
             description: $request->description(),
             startAt: $request->startAt(),
             endAt: $request->endAt(),
-
         ));
 
         return new JsonResponse([

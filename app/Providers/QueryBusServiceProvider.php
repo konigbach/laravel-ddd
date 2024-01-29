@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
+use Business\CalendarEvent\Application\UseCases\ListCalendarEvents;
 use Business\Shared\Bus\Query\Domain\QueryBusInterface;
 use Business\Shared\Bus\Query\Infrastructure\IlluminateQueryBus;
 use Illuminate\Bus\Dispatcher;
 use Illuminate\Support\ServiceProvider;
-use Business\CalendarEvent\Application\UseCases\ListCalendarEvents;
 
 class QueryBusServiceProvider extends ServiceProvider
 {

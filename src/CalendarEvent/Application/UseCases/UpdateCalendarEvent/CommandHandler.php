@@ -5,11 +5,9 @@ declare(strict_types=1);
 namespace Business\CalendarEvent\Application\UseCases\UpdateCalendarEvent;
 
 use Business\CalendarEvent\Application\Services\FindCalendarEvent\CalendarEventFinder;
-use Business\CalendarEvent\Domain\CalendarEventCreator;
 use Business\CalendarEvent\Domain\CalendarEventRepository;
 use Business\CalendarEvent\Domain\CalendarEventUpdater;
 use Business\Shared\Bus\Command\Domain\CommandHandlerInterface;
-use RuntimeException;
 
 final readonly class CommandHandler implements CommandHandlerInterface
 {
